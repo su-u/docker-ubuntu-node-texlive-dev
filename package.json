@@ -1,0 +1,30 @@
+{
+  "name": "Graduation-thesis",
+  "version": "1.0.0",
+  "repository": "https://github.com/su-u/Graduation-thesis.git",
+  "author": "su- <aaaiiiuuu35@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "pdf": "cd workspace && llmk",
+    "pdf-w": "docker volume create --name=ltfontcache && cd docker && docker-compose.exe up --build",
+    "lint": "textlint ./workspace/**/*.tex",
+    "lint-fix": "textlint --fix ./workspace/**/*.tex",
+    "spell": "cspell ./workspace/**/*.tex"
+  },
+  "dependencies": {
+    "cspell": "^5.0.1-alpha.3",
+    "textlint": "^11.6.3"
+  },
+  "devDependencies": {
+    "textlint-plugin-latex2e": "^0.3.4",
+    "textlint-rule-ja-hiragana-fukushi": "^1.0.3",
+    "textlint-rule-ja-hiragana-hojodoushi": "^1.0.4",
+    "textlint-rule-ng-word": "^1.0.0",
+    "textlint-rule-no-mixed-zenkaku-and-hankaku-alphabet": "^1.0.1",
+    "textlint-rule-preset-ja-engineering-paper": "^0.1.0",
+    "textlint-rule-preset-ja-spacing": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.0",
+    "textlint-rule-preset-japanese": "^4.0.0",
+    "textlint-rule-preset-jtf-style": "^2.3.1"
+  }
+}

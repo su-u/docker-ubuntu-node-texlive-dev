@@ -1,0 +1,12 @@
+latex = "lualatex"
+source = "master.tex"
+
+[programs.latex]
+command = "lualatex"
+opts = "-synctex=0"
+
+[programs.bibtex]
+command = "pbibtex"
+target = "DB.bib"
+opts = ["-kanji=utf8"]
+args = "%B"
