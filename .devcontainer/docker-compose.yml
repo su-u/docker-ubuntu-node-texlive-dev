@@ -1,7 +1,7 @@
 version: '3.2'
 services:
-  ubuntu-tex:
-    image: su1101/ubuntu-node-texlive-ja
+  node-tex:
+    image: su1101/node-lualatex-haranoaji-llmk:latest
     # build: ../docker
     command: sleep infinity
     volumes:
@@ -9,6 +9,5 @@ services:
         source: ../
         target: /workspace
       - ~/.gitconfig:/root/.gitconfig
-      - ./.latexmkrc:/root/.latexmkrc
     environment:
       SHELL: "/bin/bash"

@@ -1,11 +1,11 @@
 {
-    "name": "ubuntu-tex",
+    "name": "node-tex",
     "dockerComposeFile": "docker-compose.yml",
     "extensions": [
         "formulahendry.terminal",
         "james-yu.latex-workshop"
     ],
-    "service": "ubuntu-tex",
+    "service": "node-tex",
     "workspaceFolder": "/workspace",
     "shutdownAction": "stopCompose"
 }
