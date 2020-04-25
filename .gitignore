@@ -358,3 +358,4 @@ workspace/master.synctex.gz
 workspace/master.fls
 workspace/master.pdf
 workspace/master.fdb_latexmk
+*.pdf
