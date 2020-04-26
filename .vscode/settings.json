@@ -161,6 +161,7 @@
     "*.ist",
     "*.fls",
     "*.log",
+    "*.dvi",
     "*.fdb_latexmk",
     "*.synctex.gz",
     // for Beamer files
